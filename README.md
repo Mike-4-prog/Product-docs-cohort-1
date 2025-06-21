@@ -1,5 +1,3 @@
-#Hello
-
 # 📘 Product-docs-cohort-1 – Group 3
 
 This branch contains Group 3's documentation for the **Openmadness** project, as part of the Technical Writing Mentorship Program.
