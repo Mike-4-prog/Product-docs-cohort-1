@@ -1,9 +1,13 @@
-node_modules
-# VuePress default temp directory
+
 docs/.vuepress/.temp
-# VuePress default cache directory
 docs/.vuepress/.cache
 
-# VuePress default build output directory
-docs/.vuepress/dist
-docs/.vuepress/.cache
+# General
+node_modules/
+package-lock.json
+yarn.lock
+
+# OS & Editor junk
+.DS_Store
+.vscode/
+.idea/
