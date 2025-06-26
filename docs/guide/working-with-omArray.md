@@ -14,4 +14,3 @@ Using `omArray` is different from using a regular javascript array in the follow
 - **Improved readability**: `omArray` is easier to read than the complex calculations in regular arrays.
 - **Added functionality**: With `omArray` you can add functionality to your code without changing it. `omArray` will produce new outputs and won’t modify the original code.
 
-
