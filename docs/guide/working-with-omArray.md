@@ -15,7 +15,7 @@ Using `omArray` is different from using a regular javascript array in the follow
 - **Added functionality**: With `omArray` you can add functionality to your code without changing it. `omArray` will produce new outputs and won’t modify the original code.
 
 
-
+---
 ## Properties in omArray
 
 Properties give you instant information about your array without having to calculate anything yourself.
@@ -29,6 +29,8 @@ To check a **property** in omArray, use a **dot** (.)
 To check the length of an array, you would use: `numbers.length`
 :::
 
+---
+
 ### Basic properties
 The basic properties of an `omArray` are listed below:
 
@@ -36,6 +38,7 @@ The basic properties of an `omArray` are listed below:
 - `.first` -  first item
 - `.last` - last item
 - `.isEmpty` - true if no items
+
 
 #### Basic Properties Example
 
@@ -52,6 +55,8 @@ console.log(numbers.isEmpty);   // false
 console.log(numbers.first);     // 10
 console.log(numbers.last);      // 50
 ```
+
+---
 
 ### Mathematical properties
 
@@ -78,6 +83,8 @@ console.log(scores.max);        // 96
 console.log(scores.min);        // 78
 ```
 
+---
+
 ### Data Analysis Properties
 
 The data analysis properties available in `omArray` are the following:
@@ -100,6 +107,8 @@ console.log(data.hasDuplicates);  // true (we have two 2's)
 // Check if data is sorted
 console.log(data.isSorted);       // true
 ```
+
+---
 
 ## Methods in omArray
 
@@ -126,6 +135,7 @@ For example:
 numbers.toArray()
 ```
 
+---
 ### Basic Methods
 
 Some basic methods in omArray are: 
@@ -152,6 +162,8 @@ omArray([1]).isEmpty(); // false
 
 ```
 
+---
+
 ### Filter and Transform Methods
 
 Some methods for filtering and transforming data in omArray are:
@@ -172,6 +184,8 @@ console.log(evenNumbers.data);  // [2, 4, 6, 8, 10]
 const doubled = numbers.map(x => x * 2);
 console.log(doubled.data);      // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 ```
+
+---
 
 ### Chaining Methods Together
 
@@ -202,3 +216,71 @@ const sum = numbers
 
 ```
 
+:::note
+More detailed informatin about chaining methods in omArray can be found in Chaining Operations 
+:::
+
+---
+
+## Common errors
+
+
+**Mistake 1: Using parentheses () on a data property**
+
+Incorrect syntax
+```js
+const arr = omArray([1, 2, 3]);
+arr.sum()  // ❌ Wrong - this will cause an error
+```
+
+Correct syntax
+```js
+const arr = omArray([1, 2, 3]);
+arr.sum    // ✅ Correct - sum is a property, no brackets
+```
+
+Reasoning:
+
+Brackets are used when performing a method on an array. When looking up a data property, you should use dots.
+
+
+**Mistake 2: Forgetting omArray is different from regular arrays**
+
+Incorrect Syntax
+```js
+// ❌ Wrong - regular array doesn't have .sum
+const regularArray = [1, 2, 3];
+console.log(regularArray.sum);  // undefined
+```
+
+```js
+Correct Syntax
+// ✅ Correct - omArray has .sum
+const omArr = omArray([1, 2, 3]);
+console.log(omArr.sum);  // 6
+```
+
+Reasoning:
+
+`.sum` is a property only available in omArray. In a regular javascript array, you need to do the calculations in order to obtain the sum of the array.
+
+
+**Mistake 3: Expecting methods to change the original**
+
+```js
+const numbers = omArray([1, 2, 3]);
+
+// ❌ Wrong assumption - filter creates a NEW omArray
+const filtered = numbers.filter(x => x > 1);
+console.log(numbers.data);   // Still [1, 2, 3]
+console.log(filtered.data);  // [2, 3]
+```
+
+## Summary
+
+Remember:
+- Properties give you information about an `omArray`. Use a dot `.` when calling a property.
+- Methods perform actions on an `omArray`. Use parentheses `()` when calling a method.
+- Most methods return new `omArray`s
+- You can chain methods together
+- Use `.data` to see the actual array content
