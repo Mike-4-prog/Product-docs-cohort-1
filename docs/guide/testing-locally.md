@@ -9,7 +9,7 @@ In this guide, we will walk you through the process of getting
 everything ready, running the project locally, and making sure your
 changes don't break anything.
 
-::: note
+::: tip NOTE
 This guide assumes you are a bit familiar with using the terminal and
 installing software on your computer. Don’t worry, we will keep things
 beginner-friendly!
@@ -38,13 +38,16 @@ Let’s start by downloading the OpenMadness project to your machine:
 git clone https://github.com/openmadness/Product-docs-cohort-1.git
 cd Product-docs-cohort-1
 ```
-💡 Tip: If you're working in a team or on a specific feature, make
-sure you're on the correct branch:
+
+::: tip NOTE
+If you are working in a team or on a specific feature, make sure you are on the correct branch:
+:::
+
 ```bash
 git checkout your-feature-branch
 ```
 ### Setting Up a Local Test Environment
-#### Initialize a Node.js Project
+##### Initialize a Node.js Project
 Create a new folder and run:
 ```bash
 npm init -y
@@ -80,7 +83,10 @@ const matrixB = new OMArray([[5, 6], [7, 8]]);
 const result = matrixA.matMul(matrixB); // Hypothetical method
 console.log(result); // Should log [[19, 22], [43, 50]]
 ```
-💡 Tip: Use console.assert() for better test feedback:
+::: tip NOTE
+Use console.assert() for better test feedback:
+:::
+
 ```javascript
 console.assert(result.data[0][0] === 19, "❌ Matrix multiplication failed!");
 ```
