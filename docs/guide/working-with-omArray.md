@@ -99,3 +99,106 @@ console.log(data.hasDuplicates);  // true (we have two 2's)
 
 // Check if data is sorted
 console.log(data.isSorted);       // true
+```
+
+## Methods in omArray
+
+Methods are actions you perform on your omArray. 
+
+A method:
+- Executes a function on your data
+- Returns a new omArray as an output 
+- Transforms your data. 
+
+:::note
+Methods do not modify your original data.
+:::
+
+### Methods Syntax
+When using methods, use the following syntax: `object.method()`
+
+:::note
+Always use parentheses when calling a method in `omArray`
+:::
+
+For example: 
+```js
+numbers.toArray()
+```
+
+### Basic Methods
+
+Some basic methods in omArray are: 
+
+- `.toArray()`-Converts the omArray back to a regular JavaScript array.
+- `.push(item)` - adds an item to the end of the omArray 
+- `.isEmpty()`-Checks if the omArray is empty
+
+#### Basic methods examples
+```js
+const numbers = omArray([1, 2, 3, 4, 5]);
+
+// Convert back to a regular array
+const regularArray = numbers.toArray();
+console.log(regularArray);  // [1, 2, 3, 4, 5]
+
+// Add a new number to the end
+numbers.push(6);
+console.log(numbers.data);  // [1, 2, 3, 4, 5, 6]
+
+//Checks if the array is empty
+omArray([]).isEmpty(); // true
+omArray([1]).isEmpty(); // false
+
+```
+
+### Filter and Transform Methods
+
+Some methods for filtering and transforming data in omArray are:
+
+- `.filter(callback)` - Filters elements based on a condition, returning a new omArray.
+- `.map(callback)` - Applies a function to each element, returning a new omArray.
+
+#### Filter and transform methods examples
+
+```js
+const numbers = omArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// Get only even numbers (creates a new omArray)
+const evenNumbers = numbers.filter(x => x % 2 === 0);
+console.log(evenNumbers.data);  // [2, 4, 6, 8, 10]
+
+// Double all numbers (creates a new omArray)
+const doubled = numbers.map(x => x * 2);
+console.log(doubled.data);      // [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+```
+
+### Chaining Methods Together
+
+In `omArray`, you can do multiple operations in a row at once. This is called chaining.
+
+### Method Chaining Syntax
+Use dots to chain methods together.
+
+To chain 2 methods, use the syntax: `object.method().method()`
+
+To chain a property after a method, use the syntax: `object.method().property`
+
+#### Chaining Methods example
+
+```js
+const numbers = omArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+// Chain methods together
+const result = numbers
+  .filter(x => x > 5)        // omArray([6, 7, 8, 9, 10])
+  .map(x => x * 2)           // omArray([12, 14, 16, 18, 20])
+  .filter(x => x < 18);      // omArray([12, 14, 16])
+
+// Get property at the end of chain
+const sum = numbers
+  .filter(x => x % 2 === 0)  // omArray([2, 4, 6, 8, 10])
+  .sum;                      // 30 (property, no parentheses)
+
+```
+
