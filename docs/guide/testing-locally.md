@@ -9,15 +9,13 @@ In this guide, we will walk you through the process of getting
 everything ready, running the project locally, and making sure your
 changes don't break anything.
 
-<<<<<<< HEAD
+
 ::: tip NOTE
-=======
-::: note
->>>>>>> 320d578cb2b2763d1b43d319faa3412aada5c55d
 This guide assumes you are a bit familiar with using the terminal and
 installing software on your computer. Don’t worry, we will keep things
 beginner-friendly!
 :::
+
 
 ### Prerequisites
 Before you begin, make sure you have the following installed:
@@ -42,25 +40,16 @@ Let’s start by downloading the OpenMadness project to your machine:
 git clone https://github.com/openmadness/Product-docs-cohort-1.git
 cd Product-docs-cohort-1
 ```
-<<<<<<< HEAD
 
 ::: tip NOTE
 If you are working in a team or on a specific feature, make sure you are on the correct branch:
 :::
 
-=======
-💡 Tip: If you're working in a team or on a specific feature, make
-sure you're on the correct branch:
->>>>>>> 320d578cb2b2763d1b43d319faa3412aada5c55d
 ```bash
 git checkout your-feature-branch
 ```
 ### Setting Up a Local Test Environment
-<<<<<<< HEAD
 ##### Initialize a Node.js Project
-=======
-#### Initialize a Node.js Project
->>>>>>> 320d578cb2b2763d1b43d319faa3412aada5c55d
 Create a new folder and run:
 ```bash
 npm init -y
