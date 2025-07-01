@@ -10,7 +10,7 @@ everything ready, running the project locally, and making sure your
 changes don't break anything.
 
 
-::: tip NOTE
+::: tip 
 This guide assumes you are a bit familiar with using the terminal and
 installing software on your computer. Don’t worry, we will keep things
 beginner-friendly!
@@ -41,7 +41,7 @@ git clone https://github.com/openmadness/Product-docs-cohort-1.git
 cd Product-docs-cohort-1
 ```
 
-::: tip NOTE
+::: tip 
 If you are working in a team or on a specific feature, make sure you are on the correct branch:
 :::
 
@@ -86,7 +86,7 @@ const result = matrixA.matMul(matrixB); // Hypothetical method
 console.log(result); // Should log [[19, 22], [43, 50]]
 ```
 
-::: tip NOTE
+::: tip 
 Use console.assert() for better test feedback:
 :::
 
