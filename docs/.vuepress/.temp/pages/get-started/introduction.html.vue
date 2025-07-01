@@ -1,5 +1,38 @@
-<template><div><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction"><span>Introduction</span></a></h1>
-<p>content here...</p>
-</div></template>
+<template><div><h1 id="introduction-to-openmadness" tabindex="-1"><a class="header-anchor" href="#introduction-to-openmadness"><span>Introduction to Openmadness</span></a></h1>
+<p>Openmadness is a modern JavaScript library crafted to simplify array and mathematical operations, making numerical programming more accessible and intuitive for developers at any level. Whether you're a student, hobbyist, or early-career developer, Openmadness provides a clean and expressive toolkit for working with data and numbers in JavaScript.</p>
+<p>Inspired by the philosophy of libraries like NumPy (but built entirely for the JavaScript ecosystem), Openmadness brings simplicity, speed, and readability to numerical operations without requiring heavy dependencies or complex setups.</p>
+<hr>
+<h2 id="why-openmadness" tabindex="-1"><a class="header-anchor" href="#why-openmadness"><span>Why Openmadness?</span></a></h2>
+<p>In traditional JavaScript, performing advanced operations on arrays and numerical data can often be verbose, unintuitive, or slow. Openmadness solves this by:</p>
+<ul>
+<li>Simplifying syntax for common operations like mapping, reducing, slicing, and broadcasting.</li>
+<li>Providing built-in utility functions for mathematical and statistical operations.</li>
+<li>Working seamlessly with native JavaScript types, minimizing overhead.</li>
+<li>Being zero-dependency, lightweight, and easy to integrate into any project.</li>
+</ul>
+<hr>
+<h2 id="who-should-use-openmadness" tabindex="-1"><a class="header-anchor" href="#who-should-use-openmadness"><span>Who Should Use Openmadness?</span></a></h2>
+<p>This library is ideal for:</p>
+<ul>
+<li>Self-taught developers or students exploring numerical programming in JavaScript.</li>
+<li>Independent learners and makers building personal or educational projects.</li>
+<li>Early-career developers working on frontend or backend apps needing math capabilities.</li>
+<li>Anyone looking to manipulate data arrays or matrices efficiently in JavaScript.</li>
+</ul>
+<hr>
+<h2 id="key-features" tabindex="-1"><a class="header-anchor" href="#key-features"><span>Key Features</span></a></h2>
+<ul>
+<li>Intuitive API design with chainable methods</li>
+<li>Support for one-dimensional and two-dimensional data structures</li>
+<li>Fast and efficient array transformations</li>
+<li>Math operations like sum, mean, std, dot product, and more</li>
+<li>Minimal setup — ready to use in browsers or Node.js</li>
+</ul>
+<hr>
+<h2 id="installation" tabindex="-1"><a class="header-anchor" href="#installation"><span>Installation</span></a></h2>
+<p>You can install Openmadness via npm:</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code><span class="line"><span class="token function">npm</span> <span class="token function">install</span> openmadness</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
 
 
