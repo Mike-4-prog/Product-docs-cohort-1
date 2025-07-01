@@ -12,5 +12,3 @@ yarn.lock
 .idea/yarn.lock
 .yarn/
 .pnp.*
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
