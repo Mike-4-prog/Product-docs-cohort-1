@@ -1,5 +1,4 @@
 ---
-lang: en-US
 title: Introduction
 description: Description of this page
 ---
@@ -34,13 +33,13 @@ This library is ideal for:
 
 ---
 
-## Key Features 
+## Key Features
 
-- Intuitive API design with chainable methods  
-- Support for one-dimensional and two-dimensional data structures  
-- Fast and efficient array transformations  
-- Math operations like sum, mean, std, dot product, and more  
-- Minimal setup — ready to use in browsers or Node.js  
+- Intuitive API design with chainable methods
+- Support for one-dimensional and two-dimensional data structures
+- Fast and efficient array transformations
+- Math operations like sum, mean, std, dot product, and more
+- Minimal setup — ready to use in browsers or Node.js
 
 ---
 
@@ -50,3 +49,4 @@ You can install Openmadness via npm:
 
 ```bash
 npm install openmadness
+```
