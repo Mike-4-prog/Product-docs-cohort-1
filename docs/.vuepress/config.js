@@ -5,7 +5,7 @@ import { webpackBundler } from "@vuepress/bundler-webpack";
 export default defineUserConfig({
   lang: "en-US",
 
-  title: " ",
+  title: "Openmadness",
   description: " ",
 
   head: [
@@ -21,12 +21,12 @@ export default defineUserConfig({
         text: "API",
         link: "api/omArray",
       },
-
       {
         text: "GitHub",
         link: "https://github.com/Mike-4-prog/Product-docs-cohort-1.git",
       },
     ],
+
     sidebar: [
       {
         text: "Getting Started",
@@ -52,7 +52,6 @@ export default defineUserConfig({
         text: "Guide",
         collapsable: true,
         sidebarDepth: 1,
-
         children: [
           {
             text: "Working with omArray",
@@ -72,13 +71,14 @@ export default defineUserConfig({
           },
         ],
       },
+
       {
         text: "API Reference",
         collapsable: true,
         sidebarDepth: 1,
         children: [
           {
-            text: "omArray",
+            text: "omArray Reconstructor",
             link: "api/omArray",
           },
           {
@@ -91,6 +91,7 @@ export default defineUserConfig({
           },
         ],
       },
+
       {
         text: "Advanced",
         collapsable: true,
@@ -110,6 +111,7 @@ export default defineUserConfig({
           },
         ],
       },
+
       {
         text: "FAQ",
         link: "faq",
@@ -118,8 +120,13 @@ export default defineUserConfig({
         text: "Troubleshooting",
         link: "/troubleshoot",
       },
+      {
+        text: "Glossary",
+        link: "/glossary",
+      },
     ],
   }),
 
   bundler: webpackBundler(),
 });
+
