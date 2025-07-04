@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 ---
 title: Installation
 description: This page is for installation of omArray
@@ -180,4 +166,3 @@ If these tests pass, you're ready to use Openmadness 🚀. If you encounter erro
 - 📖 Read the [Getting Started Guide](/get-started/get-started.md)
 - 🚀 Check out [Basic Usage](/get-started/basic-usage.md)
 - 📚 Try Openmadness out with the [Quick Start Guide](/get-started/quick-start.md)
->>>>>>> origin/Product-docs-cohort-1-Group3
