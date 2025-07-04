@@ -4,7 +4,7 @@ description:
 ---
 
 # OpenMadness Custom Pipelines
-This document explains how to create and use a custom data transformation pipeline in openMadness (om). A `pipeline` in openMadness is a chain of transformation functions that process data in sequential steps. It lets you chain a series of changes to an array, applying each one after the other. Each change is a self-contained function that takes an array, modifies it, and returns the new version without altering the original. This makes code more reusable and easier to manage.
+A `pipeline` in openMadness is a chain of transformation functions that process data in sequential steps. It lets you chain a series of changes to an array, applying each one after the other. Each change is a self-contained function that takes an array, modifies it, and returns the new version without altering the original. This makes code more reusable and easier to manage. This document explains how to create and use a custom data transformation pipeline in openMadness (om).
 
 :::tip
 **WHAT YOU'LL COVER IN THIS SECTION:**
